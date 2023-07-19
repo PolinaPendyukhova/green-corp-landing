@@ -9,6 +9,10 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 20px;
+  position: sticky;
+  background-color: #fff;
+  top: 0;
+  z-index: 1;
 }
 
 .header__logo {
@@ -37,11 +41,13 @@ button {
 
 .about__image {
   width: 500px;
+  position: relative;
 }
 
 .about__sun-image {
   width: 100px;
   height: 100px;
+  position: absolute;
 }
 
 .about {
@@ -73,4 +79,122 @@ button {
 }
 .about__info {
   max-width: 550px;
+}
+
+.form__container {
+  width: 550px;
+}
+
+.form {
+  background-color: #1d263a;
+  color: #fff;
+  padding-top: 115px;
+  padding-bottom: 115px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+.form h1 {
+  font-size: 48px;
+}
+.form p {
+  font-size: 18px;
+  opacity: 0.65;
+}
+
+.form__group {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.form label {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 15px;
+  margin-top: 15px;
+}
+
+.form input {
+  font-size: 18px;
+  color: #213053;
+  height: 60px;
+  padding: 0px 20px;
+  border-radius: 15px;
+  border: none;
+}
+
+.form select {
+  font-size: 18px;
+  color: #213053;
+  height: 60px;
+  padding: 0px 20px;
+  border-radius: 15px;
+  border: none;
+}
+
+.form__submit {
+  font-size: 18px;
+  font-weight: 600;
+  margin-top: 40px;
+}
+
+button:hover {
+  background-color: #f6980c;
+  box-shadow: 0 16px 36px rgba(246 152 12 / 20%);
+  transition: background-color 0.3s ease-in;
+}
+select {
+  appearance: none;
+}
+input {
+  outline: none;
+}
+
+footer {
+  padding: 90px 20px;
+  font-size: 16px;
+  font-weight: 600;
+}
+.footer__container {
+  display: flex;
+  justify-content: center;
+}
+
+.footer__copyright {
+  margin-top: 40px;
+  text-align: center;
+  opacity: 0.5;
+}
+.footer__group {
+  margin-right: 80px;
+}
+
+.footer__group h3 {
+  font-size: 16px;
+  opacity: 0.7;
+  margin-bottom: 30px;
+}
+
+.footer__links {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__links a {
+  margin-bottom: 15px;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.about__sun-image {
+  animation: rotation 10s infinite linear;
 }
